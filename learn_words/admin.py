@@ -1,3 +1,5 @@
 from django.contrib import admin
+from learn_words.models import Account,Words
 
-# Register your models here.
+admin.site.register(Account)
+admin.site.register(Words)

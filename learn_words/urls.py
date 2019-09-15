@@ -1,6 +1,7 @@
-from django.urls import path
-from learn_words.views import index
+from django.conf.urls import url
+from learn_words import views
 
 urlpatterns = [
-    path('', index),
+    url(r'^register/$', views.register, name='register'),
+    url(r'^user_login/$', views.user_login, name='user_login'),
 ]
